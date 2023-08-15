@@ -47,7 +47,7 @@ compile_for_platform "generic/platform=watchOS Simulator" "TrustKit watchOS" "bu
 compile_for_platform "platform=macOS" "TrustKit OS X" "build/Release-macos"
 
 # Compile for macCatalyst
-compile_for_platform "platform=macOS,variant=Mac Catalyst" "TrustKit" "build/Release-mac-catalyst"
+# compile_for_platform "platform=macOS,variant=Mac Catalyst" "TrustKit" "build/Release-mac-catalyst"
 
 # Create xcframework
 rm -rf "TrustKit.xcframework"
@@ -59,7 +59,6 @@ xcodebuild -create-xcframework \
            -framework "build/Release-watchos/TrustKit.framework" \
            -framework "build/Release-watchsimulator/TrustKit.framework" \
            -framework "build/Release-macos/TrustKit.framework" \
-           -framework "build/Release-mac-catalyst/TrustKit.framework" \
            -output "TrustKit.xcframework"
 
 # Compress

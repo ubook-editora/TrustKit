@@ -31,6 +31,6 @@ jobs:
           aws-region: 'us-east-1'
           aws-bucket: ${{ secrets.UBOOK_MOBILE_BUCKET }}
           file-path: './TrustKit.tar.gz'
-          destination-dir: '/TrustKit/'
+          destination-dir: '/TrustKit/3.0.2/'
           bucket-root: /vendor/
           public: true

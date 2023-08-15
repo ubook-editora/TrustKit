@@ -34,4 +34,3 @@ jobs:
           destination-dir: '/TrustKit/'
           bucket-root: /vendor/
           public: true
-          expire: 0

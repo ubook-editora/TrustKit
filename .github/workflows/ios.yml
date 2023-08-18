@@ -15,7 +15,7 @@ jobs:
       fail-fast: false
       matrix:
         config:
-        - { name: "macOS Latest", os: macos-latest }
+        - { name: "macOS Latest", os: macos-13 }
 
     steps:
       - uses: actions/checkout@v2
